@@ -11,5 +11,20 @@ vendor/firmware/bcm4358A3_V0036.0054.hcd
 app/mcRegistry/ffffffff000000000000000000000028.tlbin
 
 # Radio
+bin/argosd
+bin/irsc_util
+bin/mdm_helper
+bin/mdm_helper_proxy
+bin/rild
+lib/libril.so
+lib64/libril.so
+lib/libreference-ril.so
+lib64/libreference-ril.so
+lib/libsecnativefeature.so
+lib64/libsecnativefeature.so
 lib/libsec-ril.so
 lib64/libsec-ril.so
+lib/libsecril-client.so
+lib64/libsecril-client.so
+lib64/librilswitch.so
+lib64/libcfiril.so
