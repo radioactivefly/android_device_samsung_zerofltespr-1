@@ -1,0 +1,13 @@
+
+on init
+#carrier
+    mkdir /carrier 0771 system system
+
+on fs
+#carrier
+    wait /dev/block/platform/15570000.ufs/by-name/CARRIER
+    check_fs /dev/block/platform/15570000.ufs/by-name/CARRIER ext4
+    mount ext4 /dev/block/platform/15570000.ufs/by-name/CARRIER /carrier nosuid nodev barrier=1
+    chown system system /carrier
+    chmod 0771 /carrier
+    restorecon -R /carrier

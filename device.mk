@@ -22,3 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/zerofltespr/overlay
 
 # Inherit from zero-common
 $(call inherit-product, device/samsung/zero-common/zero-common.mk)
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.carrier.rc
