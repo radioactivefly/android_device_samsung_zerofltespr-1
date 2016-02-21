@@ -4,6 +4,11 @@ $(call inherit-product, device/samsung/zerofltespr/full_zerofltespr.mk)
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/mixer_paths_cdma_03.xml:system/etc/mixer_paths_cdma_03.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_florida.xml:system/etc/mixer_paths_florida.xml
+
 # Enhanced NFC
 $(call inherit-product, vendor/aokp/configs/nfc_enhanced.mk)
 
